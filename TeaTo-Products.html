@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Products - Tea.To</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<script src="TeaTo.js"></script>
+<body style="background-color:#DEDEC4;"></body>
+
+<header class="site-header">
+    <nav class="logo">
+    <a href="index.html">Tea.To</a>
+    </nav>
+    <nav class="nav-menu">
+    <a href="TeaTo-Shops.html">SHOPS</a>
+    <div class="divider">|</div>
+    <a href="TeaTo-Products.html">PRODUCTS</a>
+    <div class="divider">|</div>
+    <a href="TeaTo-Articles.html">ARTICLES</a>
+    <div class="divider">|</div>
+    <a href="TeaTo-About.html">ABOUT</a>
+  </nav>
+</header>
+
+<section class="article-section">
+  <div class="article-container">
+    <header class="article-header">
+      <h2 class="article-main-title">Local Matcha</h2>
+      <p class="article-subtitle">From Japan to Canada.</p>
+    </header>
+  </div>
+</section>
+
+<section class="product">
+  <div class="product-grid">
+
+    <div class="product-card product-card--filters">
+
+      <p class="product-filter-title">FLAVOR PROFILES</p>
+
+      <div class="product-filters">
+        <button class="product-filter" data-filter="thickness">thickness</button>
+        <button class="product-filter" data-filter="sweetness">sweetness</button>
+        <button class="product-filter" data-filter="umami">umami</button>
+        <button class="product-filter" data-filter="vegetal">vegetal</button>
+        <button class="product-filter" data-filter="astringent">astringent</button>
+        <button class="product-filter" data-filter="acidity">acidity</button>
+      </div>
+
+    </div>
+
+    <div class="product-card product-item"
+         data-flavor="#">
+      <a href="products pg/Product1.html">
+      <img src="img/Product1.png" class="product-image">
+      <div class="product-overlay">
+        <p class="product-name">Matcha Matcha - Ceremonial</p>
+      </div>
+      </a>
+    </div>
+
+    <div class="product-card product-item"
+         data-flavor="#">
+      <a href="products pg/Product2.html">
+      <img src="img/Product2.png" class="product-image">
+      <div class="product-overlay">
+        <p class="product-name">Icha Tea - Tensei</p>
+      </div>
+      </a>
+    </div>
+    
+    <div class="product-card product-item"
+         data-flavor="#">
+      <a href="products pg/Product3.html">
+      <img src="img/Product3.jpg" class="product-image">
+      <div class="product-overlay">
+        <p class="product-name">Matcha Haus - Matcha Tin</p>
+      </div>
+      </a>
+    </div>
+
+    <div class="product-card product-item"
+         data-flavor="#">
+      <a href="products pg/Product4.html">
+      <img src="img/Product4.png" class="product-image">
+      <div class="product-overlay">
+        <p class="product-name">Wu Wei - Matcha Powder</p>
+      </div>
+      </a>
+    </div>
+
+    <div class="product-card product-item"
+         data-flavor="#">
+      <a href="products pg/Product5.html">
+      <img src="img/Product5.png" class="product-image">
+      <div class="product-overlay">
+        <p class="product-name">Hokusan - Niju Ceremonial Matcha</p>
+      </div>
+      </a>
+    </div>
+
+    <div class="product-card product-item"
+         data-flavor="#">
+      <a href="products pg/Product6.html">
+      <img src="img/Product6.png" class="product-image">
+      <div class="product-overlay">
+        <p class="product-name">Midori Spring - Emerald</p>
+      </div>
+      </a>
+    </div>
+
+    <div class="product-card product-item"
+         data-flavor="#">
+      <a href="products pg/Product7.html">
+      <img src="img/Product7.png" class="product-image">
+      <div class="product-overlay">
+        <p class="product-name">Genuine Tea - Kato Spring Harvest</p>
+      </div>
+      </a>
+    </div>
+
+    <div class="product-card product-item"
+         data-flavor="#">
+      <a href="products pg/Product8.html">
+      <img src="img/Product8.png" class="product-image">
+      <div class="product-overlay">
+        <p class="product-name">Matcha Dive - Ceremonial Grade</p>
+      </div>
+      </a>
+    </div>
+    <div class="product-card product-item"
+         data-flavor="#">
+      <a href="products pg/Product9.html">
+      <img src="img/Product9.png" class="product-image">
+      <div class="product-overlay">
+        <p class="product-name">Emeri - Matcha</p>
+      </div>
+      </a>
+    </div>
+
+    <div class="product-card product-item"
+         data-flavor="#">
+      <a href="products pg/Product10.html">
+      <img src="img/Product10.png" class="product-image">
+      <div class="product-overlay">
+        <p class="product-name">Soar Organics - Ceremonial Matcha</p>
+      </div>
+      </a>
+    </div>
+
+    <div class="product-card product-item"
+         data-flavor="#">
+      <a href="products pg/Product11.html">
+      <img src="img/Product11.png" class="product-image">
+      <div class="product-overlay">
+        <p class="product-name">Cultivate Tea - Matcha Hikari</p>
+      </div>
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<div class="compare-section">
+  <div class="compare-header">
+    <h2 class="compare-title">Compare</h2>
+  </div>
+
+  <div class="compare-container">
+    <div class="compare-column">
+      <div class="compare-card" id="card-1">
+        <div class="card-image-box"><img src="img/Placeholder.png" alt="Matcha"></div>
+        <div class="card-content">
+          <p>Select a product to compare</p>
+        </div>
+      </div>
+      <select class="product-select" onchange="updateCard(this, 'card-1')">
+        <option value="">select</option>
+        <option value="matcha-a">Matcha Matcha - Ceremonial</option>
+        <option value="matcha-b">Icha Tea - Tensei</option>
+      </select>
+    </div>
+
+    <div class="compare-column">
+      <div class="compare-card" id="card-2">
+        <div class="card-image-box"><img src="img/Placeholder.png" alt="Matcha"></div>
+        <div class="card-content">
+          <p>Select a product to compare</p>
+        </div>
+      </div>
+      <select class="product-select" onchange="updateCard(this, 'card-1')">
+        <option value="">select</option>
+        <option value="matcha-a">Matcha Matcha - Ceremonial</option>
+        <option value="matcha-b">Icha Tea - Tensei</option>
+      </select>
+    </div>
+  </div>
+</div>
+
+<footer class="site-footer">
+    <div class="footer-left">
+    <div class="logo">Tea.TO</div>
+    <p class="copyright">© 2026 Jayla Thai</p>
+    </div>
+
+    <div class="footer-right">
+    <p>Want monthly newsletters?</p>
+    <form class="newsletter-form">
+    <input type="email" placeholder="email" required>
+    <button type="submit">subscribe</button>
+    </form>
+    </div>
+</footer>
+
+</html>
