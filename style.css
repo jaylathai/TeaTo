@@ -1,4 +1,5 @@
 @import url("https://use.typekit.net/zqg2vea.css");
+@import url("https://use.typekit.net/zqg2vea.css");
 
 @keyframes fadeIn {
     from { opacity: 0; }
@@ -38,7 +39,7 @@ body {
     display: flex;
     align-items: center;
     gap: 20px;
-    font-family: 'Futura 100', sans-serif;
+    font-family: 'futura-100', sans-serif;
     font-size: 14px;
     letter-spacing: 1.5px;
   }
@@ -85,7 +86,7 @@ body {
   }
 
   .paragraph {
-    font-family: 'Futura 100', sans-serif;
+    font-family: 'futura-100', sans-serif;
     font-weight: normal;
     font-size: 15px;
     line-height: 1.5;
@@ -180,7 +181,7 @@ body {
   .card a {
     text-decoration: none;
     color: #004d00;
-    font-family: 'Futura 100', sans-serif;
+    font-family: 'futura-100', sans-serif;
     font-size: 14px;
     font-weight: normal;
     letter-spacing: 1px;
@@ -251,7 +252,7 @@ body {
   }
 
   .pill-text p {
-    font-family: 'Futura 100', sans-serif;
+    font-family: 'futura-100', sans-serif;
     color: #f0ede4;
     font-size: 14px;
     line-height: 1.5;
@@ -315,7 +316,7 @@ body {
   .articleprev h3 {
     text-decoration: none;
     color: #004d00;
-    font-family: 'Futura 100', sans-serif;
+    font-family: 'futura-100', sans-serif;
     font-size: 14px;
     font-weight: normal;
     letter-spacing: 1px;
@@ -343,12 +344,12 @@ body {
 
   .copyright {
     font-size: 12px;
-    font-family: 'Futura 100', sans-serif;
+    font-family: 'futura-100', sans-serif;
     opacity: 0.8;
   }
 
   .footer-right p {
-    font-family: 'Futura 100', sans-serif;
+    font-family: 'futura-100', sans-serif;
     font-size: 14px;
     margin-bottom: 10px;
   }
@@ -366,7 +367,7 @@ body {
     background: transparent;
     padding: 12px 25px;
     outline: none;
-    font-family: 'Futura 100', sans-serif;
+    font-family: 'futura-100', sans-serif;
   }
 
   .newsletter-form button {
@@ -374,7 +375,7 @@ body {
     border: none;
     padding: 0 20px;
     cursor: pointer;
-    font-family: 'Futura 100', sans-serif;
+    font-family: 'futura-100', sans-serif;
     text-transform: lowercase;
     color: #555;
   }
@@ -446,7 +447,7 @@ body {
   }
 
   .name {
-    font-family: 'Futura 100', sans-serif;
+    font-family: 'futura-100', sans-serif;
     font-weight: 600;
     font-size: 18px;
     letter-spacing: 1px;
@@ -488,7 +489,7 @@ body {
 .article-subtitle {
   color:#424B5A;
   margin-bottom: 40px;
-  font-family: 'Futura 100', sans-serif;
+  font-family: 'futura-100', sans-serif;
 }
 
 .article-grid {
@@ -542,7 +543,7 @@ body {
 }
 
 .article-card-title {
-  font-family: 'Futura 100', sans-serif;
+  font-family: 'futura-100', sans-serif;
   font-size: 20px;
   font-weight: 500;
   margin-bottom: 12px;
@@ -551,7 +552,7 @@ body {
 }
 
 .article-card-text {
-  font-family: 'Futura 100', sans-serif;
+  font-family: 'futura-100', sans-serif;
   font-weight: normal;
   color: #424B5A;
   font-size: 14px;
@@ -591,7 +592,7 @@ body {
 }
 
 .about-description {
-  font-family: 'Futura 100', sans-serif;
+  font-family: 'futura-100', sans-serif;
   font-size: 16px;
   font-weight: normal;
   color: #004d00;
@@ -643,7 +644,7 @@ body {
 }
 
 .product-filter-title {
-  font-family: 'Futura 100', sans-serif;
+  font-family: 'futura-100', sans-serif;
   color:#424B5A;
   font-weight: normal;
   font-size: 14px;
@@ -652,7 +653,7 @@ body {
 }
 
 .product-filters {
-  font-family: 'Futura 100', sans-serif;
+  font-family: 'futura-100', sans-serif;
   font-weight: normal;
   display: flex;
   flex-wrap: wrap;
@@ -660,7 +661,7 @@ body {
 }
 
 .product-filter {
-  font-family: 'Futura 100', sans-serif;
+  font-family: 'futura-100', sans-serif;
   font-weight: normal;
   color:#424B5A;
   border: 1px solid #999;
@@ -693,7 +694,7 @@ body {
 }
 
 .product-name {
-  font-family: 'Futura 100', sans-serif;
+  font-family: 'futura-100', sans-serif;
   color: white;
   font-size: 14px;
   font-weight: 400;
@@ -738,7 +739,7 @@ body {
   gap: 40px;
   background-color: #48744A;
   padding: 50px;
-  font-family: 'Futura 100', sans-serif;
+  font-family: 'futura-100', sans-serif;
   color:#424B5A;
   font-weight: normal;
 }
@@ -786,7 +787,7 @@ body {
   margin: 0 auto;
   gap: 50px;
   padding: 40px 20px;
-  font-family: 'Futura 100', sans-serif;
+  font-family: 'futura-100', sans-serif;
 }
 
 .pv-gallery {
@@ -969,7 +970,7 @@ body {
 }
 
 .sv-drink-name {
-  font-family: 'Futura 100', sans-serif;
+  font-family: 'futura-100', sans-serif;
   color:#424B5A;
   text-align: center;
   font-size: 18px;
@@ -979,7 +980,7 @@ body {
 }
 
 .sv-list li { 
-  font-family: 'Futura 100', sans-serif;
+  font-family: 'futura-100', sans-serif;
   color:#004d00;
   margin-bottom: 8px; 
   text-align: left;  
