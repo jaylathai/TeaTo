@@ -5,17 +5,19 @@
     <meta charset="UTF-8">
     <title>Matcha Matcha - Tea.To</title>
     <link rel="stylesheet" href="../style.css">
+    <link rel="icon" type="images/png" href="../img/Logo.png">
 </head>
 
 <body>
   
 <body style="background-color:#DEDEC4;"></body>
+<script src="../TeaTo.js"></script>
 
 <header class="site-header">
-    <nav class="logo">
+  <nav class="logo">
     <a href="../index.html">Tea.To</a>
-    </nav>
-    <nav class="nav-menu">
+  </nav>
+  <nav class="nav-menu">
     <a href="../TeaTo-Shops.html">SHOPS</a>
     <div class="divider">|</div>
     <a href="../TeaTo-Products.html">PRODUCTS</a>
@@ -24,7 +26,26 @@
     <div class="divider">|</div>
     <a href="../TeaTo-About.html">ABOUT</a>
   </nav>
+  <button class="hamburger" onclick="openNav()">&#9776;</button>
 </header>
+
+<div id="myOverlay" class="overlay" onclick="closeNav()"></div>
+
+<div id="mySidenav" class="side-menu">
+  <button class="closebtn" onclick="closeNav()">&times;</button>
+  <a href="../TeaTo-Shops.html">SHOPS</a>
+  <a href="../TeaTo-Products.html">PRODUCTS</a>
+  <a href="../TeaTo-Articles.html">ARTICLES</a>
+  <a href="../TeaTo-About.html">ABOUT</a>
+</div>
+
+<section class="back-nav-container">
+  <div class="back-nav-inner">
+    <a href="javascript:history.back()" class="back-link">
+      <div class="back-arrow">←</div> 
+    </a>
+  </div>
+</section>
 
 <section class="explore-row">
     <div class="article-container">
@@ -35,6 +56,20 @@
             <img src="../img/Shop1-1.png" alt="Matcha Classic">
     </div>
   </div>
+
+  <section class="sv-content">
+  <div class="sv-stats-row">
+
+    <div class="sv-stat-circle">
+      <span class="sv-stat-val">$7</span>
+      <span class="sv-stat-circle--small">classic</span>
+    </div>
+
+    <div class="sv-stat-circle">
+      <span class="sv-stat-val">$8.5+</span>
+      <span class="sv-stat-circle--small">specialties</span>
+  </div>
+</section>
 
     <div class="explore-header">
         <h2 class="explore-title">THE SPECS</h2>
@@ -52,13 +87,15 @@
           <ul class="sv-list">
               <li><strong>Sizes:</strong> 16 oz</li>
               <li><strong>Milk options:</strong> Dairy: Whole milk | Non-dairy: Oat milk, soy milk, coconut milk, almond milk</li>
-              <li><strong>Sweeteners:</strong></li>
+              <li><strong>Sweeteners:</strong> Sugar</li>
           </ul>
         </div>
     </div>
 
     <div class="explore-header">
-        <h2 class="explore-title">SPECIALTIES</h2>
+        <h2 class="explore-title">
+            <a href="https://matchamatcha.ca/pages/menu?srsltid=AfmBOooSGjNGdd0Ox-h00PMicZeoi0nJhVYIA9H5tYb_baHc7pmfN-LH" target="_blank">SPECIALTIES</a>
+        </h2>
     </div>
 
     <div class="sv-specialties-row">
@@ -85,7 +122,6 @@
       <div class="pill-overlay">
         <div class="pill-text">
           <h2>TORONTO FLAGSHIP</h2>
-          <p>post subject...</p>
         </div>
       </div>
     </div>
@@ -97,7 +133,6 @@
       <div class="pill-overlay">
         <div class="pill-text">
           <h2>DUNDAS CLUB</h2>
-          <p>post subject...</p>
         </div>
       </div>
     </div>
@@ -109,17 +144,56 @@
       <div class="pill-overlay">
         <div class="pill-text">
           <h2>MARKHAM LAB</h2>
-          <p>post subject...</p>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-
   <div class="explore-header">
-    <h2 class="explore-title">VISIT</h2>
+    <h2 class="explore-title">VISIT</h2> 
   </div>
+
+<div class="map-section">
+  <div class="map-embed-wrapper">
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2886.3202383426237!2d-79.38183512334707!3d43.66230925184095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4cb8e6034863b%3A0xb07fa1dc9d0d9d69!2sMATCHA%20MATCHA!5e0!3m2!1sen!2sca!4v1774657198778!5m2!1sen!2sca"
+      allowfullscreen="" 
+      loading="lazy" 
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </div>
+  <div class="map-header">
+    <h3>Toronto Flagship</h3>
+    <p>407 Church St, Toronto, ON</p>
+  </div>
+
+  <div class="map-embed-wrapper">
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2886.3202383426237!2d-79.38183512334707!3d43.66230925184095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b35796a2e9579%3A0x60b6299ffb05622b!2sMATCHA%20MATCHA!5e0!3m2!1sen!2sca!4v1774657887082!5m2!1sen!2sca"
+      allowfullscreen="" 
+      loading="lazy" 
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </div>
+  <div class="map-header">
+    <h3>Dundas Club</h3>
+    <p>294 Dundas St W, Toronto</p>
+  </div>
+
+  <div class="map-embed-wrapper">
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2878.647731099905!2d-79.3473071233408!3d43.82166584151807!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4d33c860baac7%3A0xe8ceecb93e30955f!2sMATCHA%20MATCHA%20Lab!5e0!3m2!1sen!2sca!4v1774658892113!5m2!1sen!2sca"
+      allowfullscreen="" 
+      loading="lazy" 
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </div>
+  <div class="map-header">
+    <h3>Markham Lab</h3>
+    <p>200 Steelcase Rd E, Unit 5, Markham</p>
+  </div>
+</div>
 
 <footer class="site-footer">
     <div class="footer-left">

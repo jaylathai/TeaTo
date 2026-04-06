@@ -5,16 +5,18 @@
     <meta charset="UTF-8">
     <title>Accessories Guide - Tea.To</title>
     <link rel="stylesheet" href="../style.css">
+    <link rel="icon" type="images/png" href="../img/Logo.png">
 </head>
 
 <body>
 <body style="background-color:#DEDEC4;"></body>
+<script src="../TeaTo.js"></script>
 
 <header class="site-header">
-    <nav class="logo">
+  <nav class="logo">
     <a href="../index.html">Tea.To</a>
-    </nav>
-    <nav class="nav-menu">
+  </nav>
+  <nav class="nav-menu">
     <a href="../TeaTo-Shops.html">SHOPS</a>
     <div class="divider">|</div>
     <a href="../TeaTo-Products.html">PRODUCTS</a>
@@ -23,16 +25,149 @@
     <div class="divider">|</div>
     <a href="../TeaTo-About.html">ABOUT</a>
   </nav>
+  <button class="hamburger" onclick="openNav()">&#9776;</button>
 </header>
+
+<div id="myOverlay" class="overlay" onclick="closeNav()"></div>
+
+<div id="mySidenav" class="side-menu">
+  <button class="closebtn" onclick="closeNav()">&times;</button>
+  <a href="../TeaTo-Shops.html">SHOPS</a>
+  <a href="../TeaTo-Products.html">PRODUCTS</a>
+  <a href="../TeaTo-Articles.html">ARTICLES</a>
+  <a href="../TeaTo-About.html">ABOUT</a>
+</div>
 
 <section class="article-section">
   <div class="article-container">
     <header class="article-header">
       <h2 class="article-main-title">Accessories Guide</h2>
-      <p class="article-subtitle">...</p>
+      
+      <p class="article-subtitle">A Guide to Matcha Accessories</p>
     </header>
   </div>
 </section>
+
+  <section class="av-container">
+    <div class="article-hero-image">
+      <img src="../img/ArticleHero3.jpeg" alt="Matcha Accessories">
+    </div>
+
+    <div class="article-text-wrapper">
+      <div class="text-block">
+        <h3 class="av-head">Matcha Bowl (Chawan)</h3>
+        <p class="paragraph">
+          A matcha bowl is wider and deeper than a regular cup, giving you enough space to whisk properly.
+        </p>
+        <p class="paragraph">
+          <strong>Why it matters:</strong> Allows smooth, even whisking, Helps create fine foam, Comfortable to hold while preparing matcha.
+        </p>
+        <p class="paragraph">
+          <strong>What to look for:</strong> A wide opening, A slight curve at the bottom to help prevent clumps, A pouring spout if you plan to make matcha lattes.
+        </p>
+      </div>
+
+      <div class="av-image">
+        <img src="../img/A3-1.jpg" alt="Description">
+      </div>
+
+      <div class="text-block">
+        <h3 class="av-head">Bamboo Whisk (Chasen)</h3>
+        <p class="paragraph">
+          The bamboo whisk is the traditional tool for preparing matcha. Its fine tines are flexible and well suited for whisking matcha evenly and creating a smooth, frothy texture.
+        </p>
+        <p class="paragraph">
+        <strong>Why people choose it:</strong> Traditional matcha preparation, Lightweight and comfortable to whisk with, Creates a smooth, well-aerated cup.
+        </p>
+        <p class="paragraph">
+          <strong>Tips:</strong> Soak the whisk briefly in warm water before use, Whisk in a quick W or M motion, Rinse with water only and let it air dry.
+        </p>
+      </div>      
+
+      <div class="av-image">
+        <img src="../img/A3-2.jpg" alt="Description">
+      </div>
+
+      <div class="text-block">
+        <h3 class="av-head">Resin Whisk</h3>
+        <p class="paragraph">
+        A resin whisk is a modern alternative that offers a similar whisking experience with easier maintenance. It is designed to whisk matcha efficiently and create foam, just like a bamboo whisk.
+        </p>
+        <p class="paragraph">
+          <strong>Why people choose it:</strong> Durable and long-lasting, Easy to clean and maintain, Great for everyday use or travel.
+        </p>
+      </div>
+
+      <div class="av-image">
+        <img src="../img/A3-3.jpg" alt="Description">
+      </div>
+
+      <div class="text-block">
+        <h3 class="av-head">Electric Whisk</h3>
+        <p class="paragraph">
+        The matcha electric frother offers convenience to matcha making. Whisking your matcha with this tool is quick and seamless. It’s able to properly mix the matcha powder and water to create a homogenised mixture, while still create the layer of froth on top. The matcha electric whisk is best used for on-the-go and daily use.
+        </p>
+      </div>
+
+      <div class="av-image">
+        <img src="../img/A3-4.jpeg" alt="Description">
+      </div>
+
+      <div class="text-block">
+        <h3 class="av-head">Bamboo Tea Scoop (Chashaku)</h3>
+        <p class="paragraph">
+        The chashaku, made from a single piece of fine bamboo, is the traditional tool used to measure your matcha for one serving to drink. One chashaku scoop holds around one gram or 1/4 teaspoon of matcha powder. One heaping chashaku scoop holds around two grams or 1/2 teaspoons of matcha powder. It’s recommended to use 2 chashaku scoops in your one serving of matcha, but it can always be adjusted to your preference on how you take your matcha tea.
+        </p>
+      </div>
+
+      <div class="av-image">
+        <img src="../img/A3-5.jpg" alt="Description">
+      </div>
+
+      <div class="text-block">
+        <h3 class="av-head">Measuring Spoon</h3>
+        <p class="paragraph">
+        Unlike the traditional bamboo scoop, a matcha measuring spoon offers a more modern and straightforward way to portion matcha. These spoons are usually made from stainless steel and are designed to hold a specific amount of matcha, making them easy to use for daily routines. A measuring spoon is especially useful if you make matcha lattes often or prefer a quicker, no-fuss setup. While it may not follow traditional practice, it offers convenience and reliability for everyday use.
+        </p>
+      </div>     
+
+      <div class="av-image">
+        <img src="../img/A3-6.jpg" alt="Description">
+      </div>
+
+      <div class="text-block">
+        <h3 class="av-head">Matcha Sifter</h3>
+        <p class="paragraph">
+        When you open your tin of matcha and see clumps, don’t take it as a bad sign. It’s completely normal for matcha clumps to form. That’s why we have the matcha tea sifter. Using a sifter first will get rid of all the unwanted clumps of matcha, giving your a smoother matcha powder that will be easier to whisk.
+        </p>
+      </div>     
+
+      <div class="av-image">
+        <img src="../img/A3-7.jpg" alt="Description">
+      </div>
+
+      <div class="text-block">
+        <h3 class="av-head">Kettle</h3>
+        <p class="paragraph">
+        A kettle is an essential part of matcha preparation, as water temperature plays a key role in flavour and texture. Matcha is best prepared with hot water that is not boiling. The ideal water temperature is around 80°C, which helps preserve the natural sweetness and umami of the matcha while avoiding bitterness.
+        </p>
+      </div>    
+
+      <div class="av-image">
+        <img src="../img/A3-8.jpg" alt="Description">
+      </div>
+    
+      <div class="article-text-wrapper">
+        <div class="text-block">
+          <h3 class="av-head">References</h3>
+          <ol class="paragraph">
+            <li><a href="https://matchamatcha.ca/blogs/matcha-guide/a-guide-to-matcha-accessories?srsltid=AfmBOooDV29RVj27UcIxwUZRMEVjxCaHomBCkEIJXyeRuw-R9vWnZfMt">A Guide to Matcha Accessories</a></li>
+            <li><a href="https://matcha.com/en-ca/blogs/news/a-list-of-matcha-tools-and-matcha-accessories">Matcha Tools & Matcha Accessories: Everything You Need to Know</a></li>
+          </ol>
+        </div>
+      </div>
+  </section>
+</main>
 
 <footer class="site-footer">
     <div class="footer-left">

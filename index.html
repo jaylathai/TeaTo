@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Home - Tea.To</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="images/png" href="img/Logo.png">
 </head>
 
 <body>
@@ -11,10 +12,10 @@
 <body style="background-color:#DEDEC4;"></body>
 
 <header class="site-header">
-    <nav class="logo">
+  <nav class="logo">
     <a href="index.html">Tea.To</a>
-    </nav>
-    <nav class="nav-menu">
+  </nav>
+  <nav class="nav-menu">
     <a href="TeaTo-Shops.html">SHOPS</a>
     <div class="divider">|</div>
     <a href="TeaTo-Products.html">PRODUCTS</a>
@@ -23,7 +24,18 @@
     <div class="divider">|</div>
     <a href="TeaTo-About.html">ABOUT</a>
   </nav>
+  <button class="hamburger" onclick="openNav()">&#9776;</button>
 </header>
+
+<div id="myOverlay" class="overlay" onclick="closeNav()"></div>
+
+<div id="mySidenav" class="side-menu">
+  <button class="closebtn" onclick="closeNav()">&times;</button>
+  <a href="TeaTo-Shops.html">SHOPS</a>
+  <a href="TeaTo-Products.html">PRODUCTS</a>
+  <a href="TeaTo-Articles.html">ARTICLES</a>
+  <a href="TeaTo-About.html">ABOUT</a>
+</div>
 
 <div class="hero-image">
     <div class="hero-text">
@@ -67,42 +79,47 @@
 
 <section class="gallery-row">
   <div class="pill-card">
-    <div class="pill-image-container">
-      <img src="img/Post1.PNG" alt="Post1">
-      <div class="pill-overlay">
-        <div class="pill-text">
-          <h2>Matcha Matcha</h2>
-          <p>"MATCHA MATCHA FOR UNIQLO"</p>
-          <div>
-          <h2>→</h2>
+    <a href="https://www.instagram.com/p/DWXfFL7DosX/" class="pill-card-link" target="_blank" rel="noopener noreferrer">
+      <div class="pill-image-container">
+        <img src="img/Post1.jpg" alt="Post1">
+        <div class="pill-overlay">
+          <div class="pill-text">
+            <h2>Icha Tea</h2>
+            <p>"Spring Seasonal Specials"</p>
+            <div>
+              <h2>→</h2>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </a>
   </div>
 
   <div class="pill-card">
+  <a href="https://www.instagram.com/p/DWeYfaOlRIj/?img_index=1" class="pill-card-link" target="_blank" rel="noopener noreferrer">
     <div class="pill-image-container">
-      <img src="img/Post2.PNG" alt="Post2">
+      <img src="img/Post2.jpg" alt="Post2">
       <div class="pill-overlay">
         <div class="pill-text">
           <h2>Matcha Haus</h2>
-          <p>post subject...</p>
+          <p>"Spring Seasonal Specials"</p>
           <div>
           <h2>→</h2>
           </div>
         </div>
       </div>
     </div>
+    </a>
   </div>
 
     <div class="pill-card">
+    <a href="https://www.instagram.com/p/DUo0YAkCWIK/" class="pill-card-link" target="_blank" rel="noopener noreferrer">
     <div class="pill-image-container">
       <img src="img/Post3.PNG" alt="Post3">
       <div class="pill-overlay">
         <div class="pill-text">
           <h2>Bloom Cafe</h2>
-          <p>"post subject..."</p>
+          <p>"New Cheese Foam Special"</p>
           <div>
           <h2>→</h2>
           </div>
@@ -110,6 +127,7 @@
       </div>
     </div>
   </div>
+  </a>
 </section>
 
 <section class="article-row">
@@ -120,7 +138,7 @@
   <div class="articleprev-grid">
     <div class="articleprev">
       <div class="image-wrapper">
-        <a href="article pg/Article1.html"><img src="img/ArticleHome1.jpg" alt="Matcha Flavor Profiles"></a>
+        <a href="article pg/Article1.html"><img src="img/Article1.png" alt="Matcha Flavor Profiles"></a>
       </div>
       <h3>Matcha Flavor Profiles →</h3>
     </div>

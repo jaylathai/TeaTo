@@ -4,17 +4,17 @@
     <meta charset="UTF-8">
     <title>About - Tea.To</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="images/png" href="img/Logo.png">
 </head>
 
-<body>
+<body style="background-color:#DEDEC4;">
 <script src="TeaTo.js"></script>
-<body style="background-color:#DEDEC4;"></body>
 
 <header class="site-header">
-    <nav class="logo">
+  <nav class="logo">
     <a href="index.html">Tea.To</a>
-    </nav>
-    <nav class="nav-menu">
+  </nav>
+  <nav class="nav-menu">
     <a href="TeaTo-Shops.html">SHOPS</a>
     <div class="divider">|</div>
     <a href="TeaTo-Products.html">PRODUCTS</a>
@@ -23,14 +23,24 @@
     <div class="divider">|</div>
     <a href="TeaTo-About.html">ABOUT</a>
   </nav>
+  <button class="hamburger" onclick="openNav()">&#9776;</button>
 </header>
+
+<div id="myOverlay" class="overlay" onclick="closeNav()"></div>
+
+<div id="mySidenav" class="side-menu">
+  <button class="closebtn" onclick="closeNav()">&times;</button>
+  <a href="TeaTo-Shops.html">SHOPS</a>
+  <a href="TeaTo-Products.html">PRODUCTS</a>
+  <a href="TeaTo-Articles.html">ARTICLES</a>
+  <a href="TeaTo-About.html">ABOUT</a>
+</div>
 
 <section class="about">
   <div class="about-container">
+
     <div class="about-text">
-      <h2 class="about-title">
-        ABOUT <br>US</span>
-      </h2>
+      <h2 class="about-title">ABOUT<br>US</h2>
       <p class="about-description">
         This website is a tool to navigate the matcha scene in Toronto all in one space, with the help of providing summaries, filtering, and statistics.
       </p>
@@ -38,9 +48,13 @@
         The main goal is to highlight small businesses or local brands who have branded themselves within the city, rather than global chains. We focus on local cafes that specialize in matcha crafted drinks, Canadian started matcha-products, and beginner guides on how to consume matcha.
       </p>
     </div>
+
+    <div class="about-image-wrap">
+      <img class="about-image" src="img/AboutMe.jpg" alt="matcha latte">
+    </div>
+
   </div>
 </section>
-
 
 <footer class="site-footer">
     <div class="footer-left">
@@ -57,5 +71,5 @@
     </div>
 </footer>
 
-
+</body>
 </html>

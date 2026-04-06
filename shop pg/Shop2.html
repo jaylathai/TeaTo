@@ -5,17 +5,18 @@
     <meta charset="UTF-8">
     <title>Wu Wei Coffee - Tea.To</title>
     <link rel="stylesheet" href="../style.css">
+    <link rel="icon" type="images/png" href="../img/Logo.png">
 </head>
 
 <body>
-<script src="TeaTo.js"></script>
 <body style="background-color:#DEDEC4;"></body>
+<script src="../TeaTo.js"></script>
 
 <header class="site-header">
-    <nav class="logo">
+  <nav class="logo">
     <a href="../index.html">Tea.To</a>
-    </nav>
-    <nav class="nav-menu">
+  </nav>
+  <nav class="nav-menu">
     <a href="../TeaTo-Shops.html">SHOPS</a>
     <div class="divider">|</div>
     <a href="../TeaTo-Products.html">PRODUCTS</a>
@@ -24,7 +25,149 @@
     <div class="divider">|</div>
     <a href="../TeaTo-About.html">ABOUT</a>
   </nav>
+  <button class="hamburger" onclick="openNav()">&#9776;</button>
 </header>
+
+<div id="myOverlay" class="overlay" onclick="closeNav()"></div>
+
+<div id="mySidenav" class="side-menu">
+  <button class="closebtn" onclick="closeNav()">&times;</button>
+  <a href="../TeaTo-Shops.html">SHOPS</a>
+  <a href="../TeaTo-Products.html">PRODUCTS</a>
+  <a href="../TeaTo-Articles.html">ARTICLES</a>
+  <a href="../TeaTo-About.html">ABOUT</a>
+</div>
+
+<section class="back-nav-container">
+  <div class="back-nav-inner">
+    <a href="javascript:history.back()" class="back-link">
+      <div class="back-arrow">←</div> 
+    </a>
+  </div>
+</section>
+
+
+<section class="explore-row">
+    <div class="article-container">
+    <header class="article-header">
+      <h2 class="article-main-title">WU WEI COFFEE</h2>
+    </header>
+    <div class="shop-main-image">
+            <img src="../img/Shop2-1.png" alt="Matcha Classic">
+    </div>
+  </div>
+
+<section class="sv-content">
+  <div class="sv-stats-row">
+
+    <div class="sv-stat-circle">
+      <span class="sv-stat-val">$6.5</span>
+      <span class="sv-stat-circle--small">classic</span>
+    </div>
+
+    <div class="sv-stat-circle">
+      <span class="sv-stat-val">$7+</span>
+      <span class="sv-stat-circle--small">specialties</span>
+  </div>
+</section>
+
+    <div class="explore-header">
+        <h2 class="explore-title">THE SPECS</h2>
+    </div>
+
+    <div class="sv-specs-flex">
+      <div class="sv-spec-box">
+          <ul class="sv-list">
+              <li><strong>Source/Region:</strong> Shizuoka, Japan</li>
+              <li><strong>Matcha Grade:</strong> Medium Grade (Second Harvest) | Ceremional Grade (+ $1.77)</li>
+              <li><strong>In-store preparation:</strong> Traditional Whisking: Chasen with an electric whisk gun</li>
+          </ul>
+      </div>
+      <div class="sv-spec-box">
+          <ul class="sv-list">
+              <li><strong>Sizes:</strong> 8, 10, 12, 16, 20 oz</li>
+              <li><strong>Milk options:</strong> Dairy: 3% Whole milk | Non-dairy: Oat milk</li>
+              <li><strong>Sweeteners:</strong> Cane Sugar, Vanilla Syrup</li>
+          </ul>
+        </div>
+    </div>
+
+    <div class="explore-header">
+        <h2 class="explore-title">
+            <a href="https://order.wuweicoffee.com/s/order" target="_blank">SPECIALTIES</a>
+        </h2>
+    </div>
+
+    <div class="sv-specialties-row">
+        <div class="sv-drink-card">
+            <img src="../img/Shop2-2.png" alt="Cheesecake">
+            <div class="sv-drink-name">Strawberry  Mascarpone</div>
+        </div>
+        <div class="sv-drink-card">
+            <img src="../img/Shop2-3.png" alt="Blu">
+            <div class="sv-drink-name">Apple Pie</div>
+        </div>
+        <div class="sv-drink-card">
+            <img src="../img/Shop2-4.png" alt="Tokyo Fog">
+            <div class="sv-drink-name">Coconut Cloud</div>
+        </div>
+    </div>
+
+</section>
+
+<section class="gallery-row">
+  <div class="pill-card">
+    <div class="pill-image-container">
+      <img src="../img/ShopG2-1.jpg" alt="Img1">
+      <div class="pill-overlay">
+        <div class="pill-text">
+          <h2>Wu Wei Coffee</h2>        
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="pill-card">
+    <div class="pill-image-container">
+      <img src="../img/ShopG2-2.jpg" alt="Img2">
+      <div class="pill-overlay">
+        <div class="pill-text">
+          <h2>Wu Wei Coffee</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="pill-card">
+    <div class="pill-image-container">
+      <img src="../img/ShopG2-3.jpg" alt="Img3">
+      <div class="pill-overlay">
+        <div class="pill-text">
+          <h2>Wu Wei Coffee</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <div class="explore-header">
+    <h2 class="explore-title">VISIT</h2> 
+  </div>
+
+<div class="map-section">
+  <div class="map-embed-wrapper">
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2886.7261289346907!2d-79.40318372334744!3d43.65386605238711!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b35004898ee0b%3A0xa955a7f886763118!2zV3UgV2VpIENvZmZlZSB8IOaXoOS4ug!5e0!3m2!1sen!2sca!4v1774666172643!5m2!1sen!2sca"
+      allowfullscreen="" 
+      loading="lazy" 
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </div>
+  <div class="map-header">
+    <h3>Kensington Market</h3>
+    <p>44 Kensington Ave Lower Unit, Toronto</p>
+  </div>
+</div>
 
 <footer class="site-footer">
     <div class="footer-left">

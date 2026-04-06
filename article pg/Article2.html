@@ -5,16 +5,18 @@
     <meta charset="UTF-8">
     <title>Prepration Methods - Tea.To</title>
     <link rel="stylesheet" href="../style.css">
+    <link rel="icon" type="images/png" href="../img/Logo.png">
 </head>
 
 <body>
 <body style="background-color:#DEDEC4;"></body>
+<script src="../TeaTo.js"></script>
 
 <header class="site-header">
-    <nav class="logo">
+  <nav class="logo">
     <a href="../index.html">Tea.To</a>
-    </nav>
-    <nav class="nav-menu">
+  </nav>
+  <nav class="nav-menu">
     <a href="../TeaTo-Shops.html">SHOPS</a>
     <div class="divider">|</div>
     <a href="../TeaTo-Products.html">PRODUCTS</a>
@@ -23,16 +25,110 @@
     <div class="divider">|</div>
     <a href="../TeaTo-About.html">ABOUT</a>
   </nav>
+  <button class="hamburger" onclick="openNav()">&#9776;</button>
 </header>
+
+<div id="myOverlay" class="overlay" onclick="closeNav()"></div>
+
+<div id="mySidenav" class="side-menu">
+  <button class="closebtn" onclick="closeNav()">&times;</button>
+  <a href="../TeaTo-Shops.html">SHOPS</a>
+  <a href="../TeaTo-Products.html">PRODUCTS</a>
+  <a href="../TeaTo-Articles.html">ARTICLES</a>
+  <a href="../TeaTo-About.html">ABOUT</a>
+</div>
 
 <section class="article-section">
   <div class="article-container">
     <header class="article-header">
-      <h2 class="article-main-title">Prepration Methods</h2>
-      <p class="article-subtitle">...</p>
+      <h2 class="article-main-title">Preparation Methods</h2>
+      
+      <p class="article-subtitle">A Beginners Guide to Preparing Matcha at Home</p>
     </header>
   </div>
 </section>
+
+  <section class="av-container">
+    <div class="article-hero-image">
+      <img src="../img/Article2.jpg" alt="Matcha Prep">
+    </div>
+
+    <div class="article-text-wrapper">
+    <div class="text-block">
+      <h3 class="av-head">What You'll Need</h3>
+      <p class="paragraph">
+        You can find more details of products and accessories here: <a href="https://matchamatcha.ca/blogs/matcha-guide/a-guide-to-matcha-accessories?srsltid=AfmBOooDV29RVj27UcIxwUZRMEVjxCaHomBCkEIJXyeRuw-R9vWnZfMt">A Guide to Matcha Accessories</a> | <a href="../TeaTo-Products.html">Products</a>
+      </p>
+
+     <ul class="paragraph">
+        <li>Your choice of Matcha Powder</li>
+        <li>Your choice of Matcha Whisk</li>
+        <li>Bowl or cup</li>
+        <li>Sifter</li>
+        <li>Scale (optional)</li>
+      </ul>
+
+      <h3 class="av-head">Recipe: Iced Matcha Latte</h3>
+      <p class="paragraph">
+      One of the easiest ways to enjoy matcha at home is with an iced latte. It’s refreshing, creamy, and only takes a few minutes. This recipe is an ideal ratio for beginners.
+      </p>  
+
+    <h3 class="av-head">Step 1.</h3>
+      <p class="paragraph">
+      Scoop 3g (1 ½ tsp) of matcha into a bowl.
+      </p>  
+
+    <h3 class="av-head">Step 2.</h3>
+      <p class="paragraph">
+      Add 60ml (1/4 cup) hot water (80°C) and whisk until frothy. (Aim to avoid whisking with boiling water, as that will "burn" your matcha and cause a bitter flavor)
+      </p>
+
+    <h3 class="av-head">Step 3.</h3>
+      <p class="paragraph">
+      Fill a glass with ice.
+      </p>
+
+    <h3 class="av-head">Step 4.</h3>
+      <p class="paragraph">
+      Pour in 150ml of your favorite milk. (Optional: Add 1-2 tbs of your favorite sweetener)
+      </p>
+
+    <h3 class="av-head">Step 5.</h3>
+      <p class="paragraph">
+      Top with whisked matcha. Stir, sip, and enjoy!
+      </p>
+    </div>  
+
+  <div class="av-image">
+    <img src="../img/A2-1.png" alt="Description">
+  </div>
+
+    <div class="text-block">
+    <h3 class="av-head">Other Tips:</h3>
+    <p class="paragraph">
+    Choosing between dairy and plant-based milk for your matcha latte affects both taste and texture. Dairy milks offer rich creaminess and a subtle sweetness that pairs well with ceremonial-grade matcha. Plant milks bring their own distinct flavors and mouthfeels, and are often preferred for dietary and sustainability reasons.
+    </p>
+    <p class="paragraph">
+        <strong>Popular Alternative Milk Options:</strong> Oat milk, Almond milk, Coconut milk, Soy milk
+      </p>
+    <p class="paragraph">
+    Finding the right sweetener is all about balancing the matcha’s natural depth without masking its unique flavor. 
+    </p>
+    <p class="paragraph">
+        <strong>Popular Sweetener Options:</strong> Maple syrup, Agave, Honey
+    </p>
+  </div>  
+
+<h3 class="av-head">References</h3>
+   <ol class="paragraph">
+          <li><a href="https://matchamatcha.ca/blogs/matcha-guide/matcha-at-home">How to Make Matcha at Home</a></li>
+          <li><a href="https://www.acozykitchen.com/matcha-iced-latte">Iced Matcha Latte Recipe</a></li>
+          <li><a href="https://ujichamatcha.com/blogs/latest/best-milk-for-matcha-latte-your-guide-to-creamy-flavorful-pairings?srsltid=AfmBOorDu8MFBTmi-J6BlLrQCMZvwKSbqNc1cP0aDbAbY5nKTrrok73O">Best Milk for Matcha Latte: Your Guide to Creamy, Flavorful Pairings</a></li>
+          <li><a href="https://matchasociety.com.au/blogs/news/which-sweeteners-pair-best-with-matcha?srsltid=AfmBOoqQlk5Wagvh6y2-RLoi3twnvItiXEHfLWQp_lMZUqDHBmcDEdIh">Which Sweeteners Pair Best with Matcha?</a></li>
+        </ol>
+    </div>
+  </section>
+</main>
 
 <footer class="site-footer">
     <div class="footer-left">

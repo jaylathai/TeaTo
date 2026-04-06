@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <title>Products - Tea.To</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="images/png" href="img/Logo.png">
 </head>
 
 <body>
@@ -12,10 +13,10 @@
 <body style="background-color:#DEDEC4;"></body>
 
 <header class="site-header">
-    <nav class="logo">
+  <nav class="logo">
     <a href="index.html">Tea.To</a>
-    </nav>
-    <nav class="nav-menu">
+  </nav>
+  <nav class="nav-menu">
     <a href="TeaTo-Shops.html">SHOPS</a>
     <div class="divider">|</div>
     <a href="TeaTo-Products.html">PRODUCTS</a>
@@ -24,7 +25,18 @@
     <div class="divider">|</div>
     <a href="TeaTo-About.html">ABOUT</a>
   </nav>
+  <button class="hamburger" onclick="openNav()">&#9776;</button>
 </header>
+
+<div id="myOverlay" class="overlay" onclick="closeNav()"></div>
+
+<div id="mySidenav" class="side-menu">
+  <button class="closebtn" onclick="closeNav()">&times;</button>
+  <a href="TeaTo-Shops.html">SHOPS</a>
+  <a href="TeaTo-Products.html">PRODUCTS</a>
+  <a href="TeaTo-Articles.html">ARTICLES</a>
+  <a href="TeaTo-About.html">ABOUT</a>
+</div>
 
 <section class="article-section">
   <div class="article-container">
@@ -54,7 +66,7 @@
     </div>
 
     <div class="product-card product-item"
-         data-flavor="#">
+         data-flavor="sweetness, umami, vegetal">
       <a href="products pg/Product1.html">
       <img src="img/Product1.png" class="product-image">
       <div class="product-overlay">
@@ -64,7 +76,7 @@
     </div>
 
     <div class="product-card product-item"
-         data-flavor="#">
+         data-flavor="thickness, vegetal">
       <a href="products pg/Product2.html">
       <img src="img/Product2.png" class="product-image">
       <div class="product-overlay">
@@ -74,7 +86,7 @@
     </div>
     
     <div class="product-card product-item"
-         data-flavor="#">
+         data-flavor="sweetness, umami">
       <a href="products pg/Product3.html">
       <img src="img/Product3.jpg" class="product-image">
       <div class="product-overlay">
@@ -84,7 +96,7 @@
     </div>
 
     <div class="product-card product-item"
-         data-flavor="#">
+         data-flavor="astringent, thickness, sweetness">
       <a href="products pg/Product4.html">
       <img src="img/Product4.png" class="product-image">
       <div class="product-overlay">
@@ -94,7 +106,7 @@
     </div>
 
     <div class="product-card product-item"
-         data-flavor="#">
+         data-flavor="sweetness, umami">
       <a href="products pg/Product5.html">
       <img src="img/Product5.png" class="product-image">
       <div class="product-overlay">
@@ -104,7 +116,7 @@
     </div>
 
     <div class="product-card product-item"
-         data-flavor="#">
+         data-flavor="vegetal, astringent, thickness">
       <a href="products pg/Product6.html">
       <img src="img/Product6.png" class="product-image">
       <div class="product-overlay">
@@ -114,7 +126,7 @@
     </div>
 
     <div class="product-card product-item"
-         data-flavor="#">
+         data-flavor="sweetness, umami">
       <a href="products pg/Product7.html">
       <img src="img/Product7.png" class="product-image">
       <div class="product-overlay">
@@ -124,7 +136,7 @@
     </div>
 
     <div class="product-card product-item"
-         data-flavor="#">
+         data-flavor="thickness, umami">
       <a href="products pg/Product8.html">
       <img src="img/Product8.png" class="product-image">
       <div class="product-overlay">
@@ -133,7 +145,7 @@
       </a>
     </div>
     <div class="product-card product-item"
-         data-flavor="#">
+         data-flavor="sweetness, vegetal, acidity">
       <a href="products pg/Product9.html">
       <img src="img/Product9.png" class="product-image">
       <div class="product-overlay">
@@ -143,7 +155,7 @@
     </div>
 
     <div class="product-card product-item"
-         data-flavor="#">
+         data-flavor="sweetness, acidity, umami">
       <a href="products pg/Product10.html">
       <img src="img/Product10.png" class="product-image">
       <div class="product-overlay">
@@ -153,7 +165,7 @@
     </div>
 
     <div class="product-card product-item"
-         data-flavor="#">
+         data-flavor="sweetness, umami, astringent">
       <a href="products pg/Product11.html">
       <img src="img/Product11.png" class="product-image">
       <div class="product-overlay">
@@ -173,8 +185,8 @@
   <div class="compare-container">
     <div class="compare-column">
       <div class="compare-card" id="card-1">
-        <div class="card-image-box"><img src="img/Placeholder.png" alt="Matcha"></div>
-        <div class="card-content">
+        <div class="card-image-box placeholder" id="img-box-1"></div>
+        <div class="card-content empty" id="content-1">
           <p>Select a product to compare</p>
         </div>
       </div>
@@ -182,20 +194,38 @@
         <option value="">select</option>
         <option value="matcha-a">Matcha Matcha - Ceremonial</option>
         <option value="matcha-b">Icha Tea - Tensei</option>
+        <option value="matcha-c">Matcha Haus - Matcha Tin</option>
+        <option value="matcha-d">Wu Wei - Matcha Powder</option>
+        <option value="matcha-e">Hokusan - Niju Ceremonial Matcha</option>
+        <option value="matcha-f">Midori Spring - Emerald</option>
+        <option value="matcha-g">Genuine Tea - Kato Spring Harvest</option>
+        <option value="matcha-h">Matcha Dive - Ceremonial Grade</option>
+        <option value="matcha-i">Emeri - Matcha</option>
+        <option value="matcha-j">Soar Organics - Ceremonial Matcha</option>
+        <option value="matcha-k">Cultivate Tea - Matcha Hikari</option>
       </select>
     </div>
 
     <div class="compare-column">
       <div class="compare-card" id="card-2">
-        <div class="card-image-box"><img src="img/Placeholder.png" alt="Matcha"></div>
-        <div class="card-content">
+        <div class="card-image-box placeholder" id="img-box-2"></div>
+        <div class="card-content empty" id="content-2">
           <p>Select a product to compare</p>
         </div>
       </div>
-      <select class="product-select" onchange="updateCard(this, 'card-1')">
+      <select class="product-select" onchange="updateCard(this, 'card-2')">
         <option value="">select</option>
         <option value="matcha-a">Matcha Matcha - Ceremonial</option>
         <option value="matcha-b">Icha Tea - Tensei</option>
+        <option value="matcha-c">Matcha Haus - Matcha Tin</option>
+        <option value="matcha-d">Wu Wei - Matcha Powder</option>
+        <option value="matcha-e">Hokusan - Niju Ceremonial Matcha</option>
+        <option value="matcha-f">Midori Spring - Emerald</option>
+        <option value="matcha-g">Genuine Tea - Kato Spring Harvest</option>
+        <option value="matcha-h">Matcha Dive - Ceremonial Grade</option>
+        <option value="matcha-i">Emeri - Matcha</option>
+        <option value="matcha-j">Soar Organics - Ceremonial Matcha</option>
+        <option value="matcha-k">Cultivate Tea - Matcha Hikari</option>
       </select>
     </div>
   </div>

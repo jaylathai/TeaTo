@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Articles - Tea.To</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="images/png" href="img/Logo.png">
 </head>
 
 <body>
@@ -11,10 +12,10 @@
 <body style="background-color:#DEDEC4;"></body>
 
 <header class="site-header">
-    <nav class="logo">
+  <nav class="logo">
     <a href="index.html">Tea.To</a>
-    </nav>
-    <nav class="nav-menu">
+  </nav>
+  <nav class="nav-menu">
     <a href="TeaTo-Shops.html">SHOPS</a>
     <div class="divider">|</div>
     <a href="TeaTo-Products.html">PRODUCTS</a>
@@ -23,7 +24,18 @@
     <div class="divider">|</div>
     <a href="TeaTo-About.html">ABOUT</a>
   </nav>
+  <button class="hamburger" onclick="openNav()">&#9776;</button>
 </header>
+
+<div id="myOverlay" class="overlay" onclick="closeNav()"></div>
+
+<div id="mySidenav" class="side-menu">
+  <button class="closebtn" onclick="closeNav()">&times;</button>
+  <a href="TeaTo-Shops.html">SHOPS</a>
+  <a href="TeaTo-Products.html">PRODUCTS</a>
+  <a href="TeaTo-Articles.html">ARTICLES</a>
+  <a href="TeaTo-About.html">ABOUT</a>
+</div>
 
 <section class="article-section">
   <div class="article-container">

@@ -5,16 +5,18 @@
     <meta charset="UTF-8">
     <title>Flavor Profiles - Tea.To</title>
     <link rel="stylesheet" href="../style.css">
+    <link rel="icon" type="images/png" href="../img/Logo.png">
 </head>
 
 <body>
 <body style="background-color:#DEDEC4;"></body>
+<script src="../TeaTo.js"></script>
 
 <header class="site-header">
-    <nav class="logo">
+  <nav class="logo">
     <a href="../index.html">Tea.To</a>
-    </nav>
-    <nav class="nav-menu">
+  </nav>
+  <nav class="nav-menu">
     <a href="../TeaTo-Shops.html">SHOPS</a>
     <div class="divider">|</div>
     <a href="../TeaTo-Products.html">PRODUCTS</a>
@@ -23,16 +25,137 @@
     <div class="divider">|</div>
     <a href="../TeaTo-About.html">ABOUT</a>
   </nav>
+  <button class="hamburger" onclick="openNav()">&#9776;</button>
 </header>
+
+<div id="myOverlay" class="overlay" onclick="closeNav()"></div>
+
+<div id="mySidenav" class="side-menu">
+  <button class="closebtn" onclick="closeNav()">&times;</button>
+  <a href="../TeaTo-Shops.html">SHOPS</a>
+  <a href="../TeaTo-Products.html">PRODUCTS</a>
+  <a href="../TeaTo-Articles.html">ARTICLES</a>
+  <a href="../TeaTo-About.html">ABOUT</a>
+</div>
 
 <section class="article-section">
   <div class="article-container">
     <header class="article-header">
       <h2 class="article-main-title">Flavor Profiles</h2>
-      <p class="article-subtitle">...</p>
+      
+      <p class="article-subtitle">A Guide to What Creates the Taste of Matcha.</p>
     </header>
   </div>
 </section>
+
+  <section class="av-container">
+    <div class="article-hero-image">
+      <img src="../img/ArticleHero1.png" alt="Matcha Bowls">
+    </div>
+
+    <div class="article-text-wrapper">
+      <div class="text-block">
+        <h3 class="av-head">Quality: Color</h3>
+        <p class="paragraph">
+        You can tell the quality of a Matcha powder based off its color. Matcha is made from shaded-grown tea leaf. Shaded-grown tea leaf is high in chlorophyll which give matcha the vibrant green colour. Older tea leaf has lower density of chlorophyll which give matcha yellowish colour. High grade matcha has a vibrant green colour, while low grade matcha has yellowish or brownish colour. 
+        </p>
+
+      <div class="av-image">
+        <img src="../img/A1-1.jpg" alt="Description">
+      </div>
+
+        <h3 class="av-head">Matcha Grades</h3>
+        <p class="paragraph">
+        <strong>Matcha comes in three popular grades:</strong> Ceremonial, Medium (or Premium/Latte), Culinary. 
+        </p>
+
+        <p class="paragraph">
+          Each of these grades is best suited to a particular purpose. The different Matcha grades can be determined based on their time of harvest, affecting the eventual product in aspects ranging from color to taste to nutritional composition. 
+        </p>
+
+    <div class="flavor-grid">
+      <div class="flavor-card">
+        <h4 class="flavor-card-title">Ceremonial</h4>
+        <p class="flavor-card-text"><strong>Best for:</strong> Drinking straight.</p>
+        <p class="flavor-card-text">Used for centuries in traditional tea ceremonies in Japan, this is the highest grade of Matcha available.</p>
+      </div>
+      <div class="flavor-card">
+        <h4 class="flavor-card-title">Medium</h4>
+        <p class="flavor-card-text"><strong>Best for:</strong> Lattes and daily use.</p>
+        <p class="flavor-card-text">This is a versatile, "everyday" tea designed to hold its own against other ingredients.</p>
+      </div>
+      <div class="flavor-card">
+        <h4 class="flavor-card-title">Culinary</h4>
+        <p class="flavor-card-text"><strong>Best for:</strong> Baking and cooking.</p>
+        <p class="flavor-card-text"> Made from older, sun-matured leaves. It is noticeably more Dry and bold, which is perfect for ensuring the matcha flavor isn't lost in cakes, cookies, or heavy recipes.</p>
+      </div>
+    </div>
+
+    <div class="text-block">
+      <h3 class="av-head">6 Flavors Chart</h3>
+      <p class="paragraph">
+        When describing matcha, there aren't strict methods or words to do so, but to narrow it down we can rely on a sensory balance of six core attributes to capture its complex character.
+      </p>
+    </div>
+
+    <div class="flavor-grid">
+      <div class="flavor-card">
+        <h4 class="flavor-card-title">Thickness</h4>
+        <p class="flavor-card-text">This refers to the body or viscosity in how the tea is prepared. This can also suggest a rich, velvety, creamy mouthfeel.</p>
+      </div>
+      <div class="flavor-card">
+        <h4 class="flavor-card-title">Sweetness</h4>
+        <p class="flavor-card-text">Unlike added sugar, this refers to the natural, subtle sweetness.</p>
+      </div>
+      <div class="flavor-card">
+        <h4 class="flavor-card-title">Umami</h4>
+        <p class="flavor-card-text">A deep, savory flavour. In matcha, this is a rich, brothy, or oceanic depth. </p>
+      </div>
+      <div class="flavor-card">
+        <h4 class="flavor-card-title">Vegetal</h4>
+        <p class="flavor-card-text">The signature "green" taste. This can range from fresh-cut grass to baby spinach or leafy greens.</p>
+      </div>
+      <div class="flavor-card">
+        <h4 class="flavor-card-title">Astringency</h4>
+        <p class="flavor-card-text">This is the slight "puckering" sensation on the tongue. Leaves mouth feeling tight.</p>
+      </div>
+      <div class="flavor-card">
+        <h4 class="flavor-card-title">Acidity</h4>
+        <p class="flavor-card-text">While matcha is generally low in acid, this note refers to a bright, crisp spark that can balance out heavier flavors.</p>
+      </div>
+    </div>
+
+<div class="article-text-wrapper">
+  <div class="text-block">
+    <h3 class="av-head">Cultivars</h3>
+    <p class="paragraph">
+      The cultivar acts as the "DNA" of a matcha's flavor. Matcha tea cultivars has its own unique characteristics and origins. Understanding these cultivars can help tea enthusiasts appreciate the nuances of different matcha varieties:
+    </p>
+    <ul class="paragraph">
+      <li><strong>Samidori</strong> – smooth, sweet, traditional Kyoto-style umami.</li>
+      <li><strong>Okumidori</strong> – vibrant colour, rich umami, ideal for ceremonial use.</li>
+      <li><strong>Gokō</strong> – intensely aromatic, deeply savoury; prized for premium matcha.</li>
+      <li><strong>Asahi</strong> – elegant, creamy, extremely high-end with exceptional smoothness.</li>
+      <li><strong>Ujihikari</strong> – rare Kyoto cultivar with refined sweetness grown in very limited quantities.</li>
+      <li><strong>Yabukita</strong> – Japan's most common cultivar; versatile and balanced.</li>
+      <li><strong>Saemidori</strong> – vibrant green, naturally sweet; excellent for lattes and ceremony.</li>
+    </ul>
+  </div>
+</div>
+
+
+  <h3 class="av-head">References</h3>
+  <ol class="paragraph">
+    <li><a href="https://nioteas.ca/blogs/matcha/what-does-matcha-taste-like?shpxid=26c143ba-6ad7-4a9c-8e52-35cb4f38750f">What does matcha taste like?</a></li>
+    <li><a href="https://www.instagram.com/reels/DOWGj27EaTM/">Matcha Tasting Notes & What They Mean</a></li>
+    <li><a href="https://getcrafti.sg/blogs/articles/different-matcha-grades?srsltid=AfmBOoozTmA4OIox7hGmMaGHrHlSiMGrUaqQ39izoJYl6v9O-_oqLuep">The Different Matcha Grades</a></li>
+    <li><a href="https://www.matcha.my/blogs/info/high-vs-low-quality-matcha">Differentiate High Grade From Low Grade Matcha</a></li>
+    <li><a href="https://kyohayashiyamatcha.com/blogs/journal/understanding-matcha-tea-cultivars-a-guide-for-tea-enthusiasts?srsltid=AfmBOooPw-v8SnBH_oP15SMhm7YKLVeRSyU4BF5rTkbsR4o5dluUPbXk">Understanding Matcha Tea Cultivars</a></li>
+    <li><a href="https://ujimatchatea.com/blogs/news/matcha-cultivars-guide?srsltid=AfmBOoo9BjE2jUFEl8g61swv9zs4VHBnE1Ri6_ounP8hSnr7bJSQ1CgA">A Guide to Matcha Cultivars: From Samidori to Okumidori</a></li>
+  </ol>
+</div>
+  </section>
+</main>
 
 <footer class="site-footer">
     <div class="footer-left">

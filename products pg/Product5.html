@@ -5,16 +5,18 @@
     <meta charset="UTF-8">
     <title>Product - Tea.To</title>
     <link rel="stylesheet" href="../style.css">
+    <link rel="icon" type="images/png" href="../img/Logo.png">
 </head>
 
 <body>
 <body style="background-color:#DEDEC4;"></body>
+<script src="../TeaTo.js"></script>
 
 <header class="site-header">
-    <nav class="logo">
+  <nav class="logo">
     <a href="../index.html">Tea.To</a>
-    </nav>
-    <nav class="nav-menu">
+  </nav>
+  <nav class="nav-menu">
     <a href="../TeaTo-Shops.html">SHOPS</a>
     <div class="divider">|</div>
     <a href="../TeaTo-Products.html">PRODUCTS</a>
@@ -23,7 +25,68 @@
     <div class="divider">|</div>
     <a href="../TeaTo-About.html">ABOUT</a>
   </nav>
+  <button class="hamburger" onclick="openNav()">&#9776;</button>
 </header>
+
+<div id="myOverlay" class="overlay" onclick="closeNav()"></div>
+
+<div id="mySidenav" class="side-menu">
+  <button class="closebtn" onclick="closeNav()">&times;</button>
+  <a href="../TeaTo-Shops.html">SHOPS</a>
+  <a href="../TeaTo-Products.html">PRODUCTS</a>
+  <a href="../TeaTo-Articles.html">ARTICLES</a>
+  <a href="../TeaTo-About.html">ABOUT</a>
+</div>
+
+<main class="pv-container">
+  <section class="pv-gallery">
+    <a href="javascript:history.back()" class="back-link">
+    <div class="back-arrow">←</div>
+    </a>
+    <div class="pv-image-card">
+      <img src="../img/Product5.png" alt="Matcha - Standard View" class="pv-main-img">
+      <img src="../img/Product5-hover.png" alt="Matcha - Close-up View" class="pv-main-img pv-main-img--hover">
+    </div>
+  </section>
+
+  <section class="pv-content">
+    <h1 class="pv-title">“Hokusan - Niju” </h1>
+
+    <div class="pv-stats-row">
+      <div class="pv-stat-circle">
+        <span class="pv-stat-val">$40</span>
+      </div>
+      <div class="pv-stat-circle">
+        <span class="pv-stat-val">40 g</span>
+      </div>
+      <div class="pv-stat-circle pv-stat-circle--small">
+        <span class="pv-stat-val">$1.00</span>
+        <span class="pv-stat-label">per gram</span>
+      </div>
+    </div>
+
+    <div class="pv-section">
+      <h3 class="pv-head">This Matcha tastes...</h3>
+      <div class="pv-info-box">
+        <p><strong>Notes:</strong> Rich, Sweet, Floral, Nutty, Umami</p>
+        <p>
+          <strong>Profiles:</strong> 
+          <span class="pv-pill">sweetness</span>
+          <span class="pv-pill">umami</span>
+        </p>
+      </div>
+    </div>
+
+    <div class="pv-section">
+      <h3 class="pv-head">This Matcha is...</h3>
+      <div class="pv-info-box">
+        <p><strong>Region:</strong> Shizuoka and Kagoshima blend</p>
+        <p><strong>Grade:</strong> Ceremonial</p>
+        <p><strong>Cultivar:</strong> Yabukita and Yutaka Midori</p>
+      </div>
+    </div>
+  </section>
+</main>
 
 <footer class="site-footer">
     <div class="footer-left">

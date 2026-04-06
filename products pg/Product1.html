@@ -5,16 +5,18 @@
     <meta charset="UTF-8">
     <title>Product - Tea.To</title>
     <link rel="stylesheet" href="../style.css">
+    <link rel="icon" type="images/png" href="../img/Logo.png">
 </head>
 
 <body>
 <body style="background-color:#DEDEC4;"></body>
+<script src="../TeaTo.js"></script>
 
 <header class="site-header">
-    <nav class="logo">
+  <nav class="logo">
     <a href="../index.html">Tea.To</a>
-    </nav>
-    <nav class="nav-menu">
+  </nav>
+  <nav class="nav-menu">
     <a href="../TeaTo-Shops.html">SHOPS</a>
     <div class="divider">|</div>
     <a href="../TeaTo-Products.html">PRODUCTS</a>
@@ -23,17 +25,29 @@
     <div class="divider">|</div>
     <a href="../TeaTo-About.html">ABOUT</a>
   </nav>
+  <button class="hamburger" onclick="openNav()">&#9776;</button>
 </header>
 
+<div id="myOverlay" class="overlay" onclick="closeNav()"></div>
+
+<div id="mySidenav" class="side-menu">
+  <button class="closebtn" onclick="closeNav()">&times;</button>
+  <a href="../TeaTo-Shops.html">SHOPS</a>
+  <a href="../TeaTo-Products.html">PRODUCTS</a>
+  <a href="../TeaTo-Articles.html">ARTICLES</a>
+  <a href="../TeaTo-About.html">ABOUT</a>
+</div>
+
 <main class="pv-container">
-  <section class="pv-gallery">
-    <a href="javascript:history.back()" class="back-link">
-    <div class="back-arrow">←</div>
-    </a>
-    <div class="pv-image-card">
-      <img src="../img/Product1.png" alt="Matcha Matcha" class="pv-main-img">
-    </div>
-  </section>
+    <section class="pv-gallery">
+        <a href="javascript:history.back()" class="back-link">
+            <div class="back-arrow">←</div>
+        </a>
+        <div class="pv-image-card">
+            <img src="../img/Product1.png" alt="Matcha - Standard View" class="pv-main-img">
+            <img src="../img/Product1-hover.png" alt="Matcha - Close-up View" class="pv-main-img pv-main-img--hover">
+        </div>
+    </section>
 
   <section class="pv-content">
     <h1 class="pv-title">“MATCHA MATCHA”</h1>
@@ -54,7 +68,7 @@
     <div class="pv-section">
       <h3 class="pv-head">This Matcha tastes...</h3>
       <div class="pv-info-box">
-        <p><strong>Notes:</strong> vanilla and stone fruit</p>
+        <p><strong>Notes:</strong> Vanilla and Stone Fruit</p>
         <p>
           <strong>Profiles:</strong> 
           <span class="pv-pill">sweetness</span>
@@ -69,7 +83,7 @@
       <div class="pv-info-box">
         <p><strong>Region:</strong> Kyoto, Japan</p>
         <p><strong>Grade:</strong> Ceremonial</p>
-        <p><strong>Harvest:</strong> Single cultivar</p>
+        <p><strong>Cultivar:</strong> Yabukita blend</p>
       </div>
     </div>
   </section>

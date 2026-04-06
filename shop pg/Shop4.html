@@ -5,17 +5,18 @@
     <meta charset="UTF-8">
     <title>Matcha Haus - Tea.To</title>
     <link rel="stylesheet" href="../style.css">
+    <link rel="icon" type="images/png" href="../img/Logo.png">
 </head>
 
 <body>
-<script src="TeaTo.js"></script>
+<script src="../TeaTo.js"></script>
 <body style="background-color:#DEDEC4;"></body>
 
 <header class="site-header">
-    <nav class="logo">
+  <nav class="logo">
     <a href="../index.html">Tea.To</a>
-    </nav>
-    <nav class="nav-menu">
+  </nav>
+  <nav class="nav-menu">
     <a href="../TeaTo-Shops.html">SHOPS</a>
     <div class="divider">|</div>
     <a href="../TeaTo-Products.html">PRODUCTS</a>
@@ -24,8 +25,172 @@
     <div class="divider">|</div>
     <a href="../TeaTo-About.html">ABOUT</a>
   </nav>
+  <button class="hamburger" onclick="openNav()">&#9776;</button>
 </header>
 
+<div id="myOverlay" class="overlay" onclick="closeNav()"></div>
+
+<div id="mySidenav" class="side-menu">
+  <button class="closebtn" onclick="closeNav()">&times;</button>
+  <a href="../TeaTo-Shops.html">SHOPS</a>
+  <a href="../TeaTo-Products.html">PRODUCTS</a>
+  <a href="../TeaTo-Articles.html">ARTICLES</a>
+  <a href="../TeaTo-About.html">ABOUT</a>
+</div>
+
+<section class="back-nav-container">
+  <div class="back-nav-inner">
+    <a href="javascript:history.back()" class="back-link">
+      <div class="back-arrow">←</div> 
+    </a>
+  </div>
+</section>
+
+<section class="explore-row">
+    <div class="article-container">
+    <header class="article-header">
+      <h2 class="article-main-title">MATCHA HAUS</h2>
+    </header>
+    <div class="shop-main-image">
+            <img src="../img/Shop4-1.png" alt="Matcha Classic">
+    </div>
+  </div>
+
+<section class="sv-content">
+  <div class="sv-stats-row">
+
+    <div class="sv-stat-circle">
+      <span class="sv-stat-val">$7</span>
+      <span class="sv-stat-circle--small">classic</span>
+    </div>
+
+    <div class="sv-stat-circle">
+      <span class="sv-stat-val">$8.5+</span>
+      <span class="sv-stat-circle--small">specialties</span>
+  </div>
+</section>
+
+    <div class="explore-header">
+        <h2 class="explore-title">THE SPECS</h2>
+    </div>
+
+    <div class="sv-specs-flex">
+      <div class="sv-spec-box">
+          <ul class="sv-list">
+              <li><strong>Source/Region:</strong> Nagasaki, Japan</li>
+              <li><strong>Matcha Grade:</strong> Ceremonial Grade</li>
+              <li><strong>In-store preparation:</strong> Traditional Whisking: Chasen with an electric whisk gun</li>
+          </ul>
+      </div>
+      <div class="sv-spec-box">
+          <ul class="sv-list">
+              <li><strong>Sizes:</strong> 16 oz</li>
+              <li><strong>Milk options:</strong> Dairy: 2% Milk | Non-dairy: Almond milk, Soy milk, Oat milk, Coconut milk, Coconut water (iced only)</li>
+              <li><strong>Sweeteners:</strong> Syrup</li>
+          </ul>
+        </div>
+    </div>
+
+    <div class="explore-header">
+        <h2 class="explore-title">
+            <a href="https://www.ubereats.com/ca/store/matcha-haus-torontos/DvaaQpYoXwiCqlxqU8826g?ps=1" target="_blank">SPECIALTIES</a>
+        </h2>
+    </div>
+
+    <div class="sv-specialties-row">
+        <div class="sv-drink-card">
+            <img src="../img/Shop4-2.png" alt="Banana Bread">
+            <div class="sv-drink-name">Banana Bread</div>
+        </div>
+        <div class="sv-drink-card">
+            <img src="../img/Shop4-3.png" alt="Double Pistachio">
+            <div class="sv-drink-name">Double Pistachio</div>
+        </div>
+        <div class="sv-drink-card">
+            <img src="../img/Shop4-4.png" alt="Strawberry Yuzu">
+            <div class="sv-drink-name">Strawberry Yuzu</div>
+        </div>
+    </div>
+
+</section>
+
+<section class="gallery-row">
+  <div class="pill-card">
+    <div class="pill-image-container">
+      <img src="../img/ShopG4-1.jpg" alt="Img1">
+      <div class="pill-overlay">
+        <div class="pill-text">
+          <h2>Alexandra Park</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="pill-card">
+    <div class="pill-image-container">
+      <img src="../img/ShopG4-2.jpg" alt="Img2">
+      <div class="pill-overlay">
+        <div class="pill-text">
+          <h2>Alexandra Park</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="pill-card">
+    <div class="pill-image-container">
+      <img src="../img/ShopG4-3.jpg" alt="Img3">
+      <div class="pill-overlay">
+        <div class="pill-text">
+          <h2>Leslieville</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <div class="pill-card">
+    <div class="pill-image-container">
+      <img src="../img/ShopG4-4.jpg" alt="Img3">
+      <div class="pill-overlay">
+        <div class="pill-text">
+          <h2>Leslieville</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <div class="explore-header">
+    <h2 class="explore-title">VISIT</h2> 
+  </div>
+
+<div class="map-section">
+  <div class="map-embed-wrapper">
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2887.180249032072!2d-79.4210806233477!3d43.644418052998034!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b35004e991721%3A0x8a3a025edf801169!2sMatcha%20Haus!5e0!3m2!1sen!2sca!4v1774667548271!5m2!1sen!2sca"
+      allowfullscreen="" 
+      loading="lazy" 
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </div>
+  <div class="map-header">
+    <h3>Alexandra Park</h3>
+    <p>324 Bathurst St, Toronto</p>
+  </div>
+
+  <div class="map-embed-wrapper">
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d46185.95759930209!2d-79.41576269026895!3d43.65602495183412!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4cb00731f47e7%3A0xcc7671fc96bd8bd2!2sMatcha%20Haus!5e0!3m2!1sen!2sca!4v1774844542000!5m2!1sen!2sca"
+      allowfullscreen="" 
+      loading="lazy" 
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </div>
+  <div class="map-header">
+    <h3>Leslieville</h3>
+    <p>890 Queen St E, Toronto</p>
+  </div>
+</div>
 
 <footer class="site-footer">
     <div class="footer-left">
