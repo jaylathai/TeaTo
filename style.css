@@ -124,7 +124,7 @@ main {
   z-index: 901;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 480px) {
   .site-header {
     padding: 20px 24px;
   }
@@ -193,7 +193,7 @@ background-color: #005403;
 color: #f0ede4;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 480px) {
   .hero-text h1 {
   line-height: 1;
   max-width: 20px;
@@ -298,7 +298,7 @@ transform: translateY(-10px);
   margin-top: 30px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 480px) {
   .explore-row {
     padding: 50px 20px;
     margin-bottom: 30px;
@@ -484,7 +484,7 @@ transform: translateY(-10px);
   margin-top: 25px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 480px) {
   .article-row {
     padding: 50px 20px;
     margin-bottom: 30px;
@@ -581,7 +581,7 @@ transform: translateY(-10px);
   color: #555;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 480px) {
   .site-footer {
     padding: 30px;
     margin-top: 80px;
@@ -685,7 +685,7 @@ transform: translateY(-10px);
   margin-right: 60px; 
 }
 
-@media (max-width: 600px) {
+@media (max-width: 480px) {
   .section-title {
     margin-top: 60px;
     margin-bottom: 24px;
@@ -822,7 +822,7 @@ transform: translateY(-10px);
   margin-top: 0px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 480px) {
   .article-container{
   flex-direction: column;
   }
@@ -884,7 +884,7 @@ transform: translateY(-10px);
   display: block;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 480px) {
   .about {
     padding-bottom: 150px;
   }
@@ -1011,7 +1011,7 @@ transform: translateY(-10px);
   font-size: 20px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 480px) {
   .product-grid {
     grid-template-columns: repeat(2, 1fr);
     margin-top: -150px;
@@ -1240,7 +1240,7 @@ transform: translateY(-10px);
   font-size: 11px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 480px) {
   .compare-title {
     font-size: 36px;
   }
@@ -1411,7 +1411,7 @@ transform: translateY(-10px);
   display: inline-block;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 480px) {
   .pv-container {
     flex-direction: column;
     padding: 40px 20px;
@@ -1627,7 +1627,7 @@ transform: translateY(-10px);
   margin-bottom: 50px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 480px) {
   .sv-container {
     padding: 20px 16px;
   }
@@ -1796,7 +1796,7 @@ transform: translateY(-10px);
   margin-bottom: 20px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 480px) {
   .flavor-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 15px;
